@@ -1,0 +1,72 @@
+<mat-toolbar>
+  <button mat-icon-button *ngIf="sidenav.mode === 'over'" (click)="sidenav.toggle()">
+    <mat-icon *ngIf="!sidenav.opened">
+      menu
+    </mat-icon>
+    <mat-icon *ngIf="sidenav.opened">
+      close
+    </mat-icon>
+  </button>
+  <span>DevelopBats</span>
+</mat-toolbar>
+
+<mat-sidenav-container class="example-container" >
+  <mat-sidenav class="mat-elevation-z8" #sidenav="matSidenav" mode="side" opened>
+    <img class="avatar mat-elevation-z8" src="https://img.freepik.com/iconos-gratis/murcielago_318-889521.jpg?w=150" alt="">
+    <h4 class="name">Tony</h4>
+    <p class="designation">Ing. Sistemas</p>
+
+    <mat-divider></mat-divider>
+    <button mat-button class="menu-button">
+      <mat-icon>person</mat-icon>
+      <span><a [routerLink]="['perfiles/perfiles']">Perfiles</a></span>
+    </button>
+    <button mat-button class="menu-button">
+      <mat-icon>person</mat-icon>
+      <span> <a [routerLink]="['sedes/sedes']">Sedes</a> </span>
+    </button>
+    <button mat-button class="menu-button">
+      <mat-icon>person</mat-icon>
+      <span><a [routerLink]="['responsables/responsables']">Responsable</a></span>
+    </button>
+    <button mat-button class="menu-button">
+      <mat-icon>person</mat-icon>
+      <span><a [routerLink]="['tipomueble/tipomueble']">T. Mueble</a></span>
+    </button>
+    <button mat-button class="menu-button">
+      <mat-icon>person</mat-icon>
+      <span><a [routerLink]="['tipoinmueble/tipoinmueble']">T. Inmueble</a></span>
+    </button>
+    <button mat-button class="menu-button">
+      <mat-icon>person</mat-icon>
+      <span><a [routerLink]="['ubicacionmueble/ubicacionmueble']">Ubi. Mueble</a></span>
+    </button>
+    <button mat-button class="menu-button">
+      <mat-icon>person</mat-icon>
+      <span><a [routerLink]="['mueble/mueble']">Mueble</a></span>
+    </button>
+    <button mat-button class="menu-button">
+      <mat-icon>person</mat-icon>
+      <span><a [routerLink]="['inmueble/inmueble']">Inmueble</a></span>
+    </button>
+    <button mat-button class="menu-button">
+      <mat-icon>person</mat-icon>
+      <span><a [routerLink]="['usuario/usuario']">Usuarios</a></span>
+    </button>
+    <button mat-button class="menu-button">
+      <mat-icon>person</mat-icon>
+      <span><a [routerLink]="['general/general']">General</a></span>
+    </button>
+
+    <mat-divider></mat-divider>
+    <button mat-button class="menu-button">
+      <mat-icon>logout</mat-icon>
+      <span><a [routerLink]="['/login']">Salir</a></span>
+    </button>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div class="content mat-elevation-z8">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
