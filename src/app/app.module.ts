@@ -19,6 +19,10 @@ import { TipomuebleModule } from './tipomueble/tipomueble.module';
 import { UbicacionmuebleModule } from './ubicacionmueble/ubicacionmueble.module';
 import { UsuarioModule } from './usuario/usuario.module';
 import {HttpClientModule} from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatDialogModule } from '@angular/material/dialog';
+
+
 
 
 @NgModule({
@@ -42,7 +46,9 @@ import {HttpClientModule} from '@angular/common/http';
     TipomuebleModule,
     UbicacionmuebleModule,
     UsuarioModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

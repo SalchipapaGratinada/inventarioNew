@@ -1,0 +1,25 @@
+table {
+  width: 100%;
+}
+::ng-deep #mat-no-border .mat-form-field-flex {
+padding-left: 0px;
+box-shadow: none !important;
+}
+
+::ng-deep #mat-no-border .mat-form-field-flex {
+border-radius: 0px !important;
+border-width: 0px !important;
+}
+
+.mat-button-toggle-appearance-standard {
+color: #1e293b !important;
+background: #e2e8f0 !important;
+}
+
+.mat-button-toggle-checked.mat-button-toggle-appearance-standard {
+background: #1e3a8a !important;
+}
+
+::ng-deep .mat-button-toggle-group .mat-button-toggle.mat-button-toggle-checked .mat-button-toggle-label-content {
+color: white !important;
+}
