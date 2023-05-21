@@ -18,7 +18,7 @@ import { TipoinmuebleModule } from './tipoinmueble/tipoinmueble.module';
 import { TipomuebleModule } from './tipomueble/tipomueble.module';
 import { UbicacionmuebleModule } from './ubicacionmueble/ubicacionmueble.module';
 import { UsuarioModule } from './usuario/usuario.module';
-
+import {HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
@@ -41,7 +41,8 @@ import { UsuarioModule } from './usuario/usuario.module';
     TipoinmuebleModule,
     TipomuebleModule,
     UbicacionmuebleModule,
-    UsuarioModule
+    UsuarioModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
